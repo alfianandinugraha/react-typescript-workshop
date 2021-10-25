@@ -6,7 +6,7 @@ interface AppProps extends HTMLAttributes {}
 
 function App(props: AppProps) {
   return (
-    <Counter>
+    <Counter firstChild={<p>Hi from firstChild</p>}>
       <p>Hello from parent !</p>
     </Counter>
   )
