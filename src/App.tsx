@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { HTMLAttributes } from 'types'
 import LimitingProps from './advanced/LimitingProps'
+import Polymorphic from './advanced/Polymorphic'
 import Counter from './components/Counter'
 import CounterClass from './components/CounterClass'
 import CounterContextAPI from './components/CounterContextAPI'
@@ -34,6 +35,8 @@ function App(props: AppProps) {
       <CounterHOC initialValue={99} />
       <hr />
       <LimitingProps />
+      <hr />
+      <Polymorphic />
     </>
   )
 }
