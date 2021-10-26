@@ -30,7 +30,7 @@ function App(props: AppProps) {
       <Generic<string> value="Hello world !" />
       <Generic<number> value={90} />
       <hr />
-      <CounterHOC />
+      <CounterHOC initialValue={99} />
     </>
   )
 }
