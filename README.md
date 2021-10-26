@@ -9,3 +9,6 @@ I learn all about Reactjs with Typescript especially about types which is make T
 - Counter.tsx : All about basic Typescript with React
 - CounterClass.tsx : Implementation of Typescript to Reactjs with Generic
 - CounterHook.tsx : example custom hook
+- CounterContextAPI.tsx : Using Typescript with context API
+- CounterReduce.tsx : Using Typescrit with useReducer hook
+- Generic.tsx : Generic with component
