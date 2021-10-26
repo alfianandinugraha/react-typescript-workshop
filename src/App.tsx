@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { HTMLAttributes } from 'types'
 import Counter from './components/Counter'
 import CounterClass from './components/CounterClass'
-import CounterContext from './components/CounterContext'
+import CounterContextAPI from './components/CounterContext'
 import CounterHook from './components/CounterHook'
 import CounterReduce from './components/CounterReduce'
 
@@ -22,7 +22,7 @@ function App(props: AppProps) {
       <hr />
       <CounterReduce />
       <hr />
-      <CounterContext />
+      <CounterContextAPI />
     </>
   )
 }
