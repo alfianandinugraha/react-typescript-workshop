@@ -5,6 +5,7 @@ import CounterClass from './components/CounterClass'
 import CounterContextAPI from './components/CounterContextAPI'
 import CounterHook from './components/CounterHook'
 import CounterReduce from './components/CounterReduce'
+import Generic from './components/Generic'
 
 interface AppProps extends HTMLAttributes {}
 
@@ -23,6 +24,10 @@ function App(props: AppProps) {
       <CounterReduce />
       <hr />
       <CounterContextAPI />
+      <hr />
+      <Generic<number> value={5} />
+      <Generic<string> value="Hello world !" />
+      <Generic<number> value={90} />
     </>
   )
 }
