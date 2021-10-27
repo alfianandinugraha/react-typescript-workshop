@@ -2,10 +2,14 @@ import React from 'react'
 
 type TextTag = Extract<keyof JSX.IntrinsicElements, 'p' | 'a' | 'h1' | 'h2'>
 
-type TextProps<T extends TextTag> = {
+type TextPureProps<T extends TextTag> = {
   as?: T
   onClickText?: () => void
-} & JSX.IntrinsicElements[T]
+  id?: number
+}
+
+type TextProps<T extends TextTag> = TextPureProps<T> &
+  Omit<JSX.IntrinsicElements[T], keyof TextPureProps<T>>
 
 function Text<T extends TextTag>(props: TextProps<T>) {
   const TagName: React.ElementType = props.as ? props.as : 'p'
@@ -23,7 +27,7 @@ function Text<T extends TextTag>(props: TextProps<T>) {
 const Polymorphic = (): React.ReactElement => {
   return (
     <>
-      <Text as="a" id="string" href="a">
+      <Text as="a" id={2} href="a">
         Hello from 'a'
       </Text>
       <Text
