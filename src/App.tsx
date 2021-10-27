@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { HTMLAttributes } from 'types'
 import LimitingProps from './advanced/LimitingProps'
+import Heading from './advanced/Overloading'
 import Polymorphic from './advanced/Polymorphic'
 import Counter from './components/Counter'
 import CounterClass from './components/CounterClass'
@@ -37,6 +38,10 @@ function App(props: AppProps) {
       <LimitingProps />
       <hr />
       <Polymorphic />
+      <hr />
+      <h1>Overloading Function</h1>
+      <Heading text="Hello" />
+      <Heading />
     </>
   )
 }
